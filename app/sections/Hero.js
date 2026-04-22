@@ -24,7 +24,9 @@ export default function Hero() {
         <div className='flex-1 flex items-center'>
           <div className='w-full flex flex-col gap-6 md:gap-8'>
             <Heading size='hero' as='h1'>
-              {"You don't need another site.\nYou need one that actually delivers."}
+              {
+                "You don't need another site.\nYou need one that actually delivers."
+              }
             </Heading>
             <motion.p
               initial={{ opacity: 0, y: 10 }}

@@ -16,7 +16,7 @@ const PLANS = [
     number: '01',
     name: 'Launch',
     introductory: true,
-    pricePK: 'PKR 60,000',
+    pricePK: 'PKR 70,000',
     priceIntl: '$300',
     timeline: '≈ 1 week',
     included: [
@@ -30,7 +30,7 @@ const PLANS = [
     number: '02',
     name: 'Studio',
     introductory: true,
-    pricePK: 'PKR 85,000',
+    pricePK: 'PKR 95,000',
     priceIntl: '$500',
     timeline: '≈ 3 weeks',
     included: [
@@ -84,7 +84,11 @@ export default function Pricing() {
 
         <div className='flex flex-col gap-16 md:gap-24'>
           {PLANS.map((plan) => (
-            <PricingBlock key={plan.number} plan={plan} isPakistan={isPakistan} />
+            <PricingBlock
+              key={plan.number}
+              plan={plan}
+              isPakistan={isPakistan}
+            />
           ))}
         </div>
       </div>
@@ -109,7 +113,8 @@ function PricingBlock({ plan, isPakistan }) {
           <div
             className='ml-auto w-fit bg-red-600 px-7 py-2 text-white shadow-[0_8px_28px_rgba(0,0,0,0.26)] md:px-9 md:py-2.5'
             style={{
-              transform: 'rotate(8deg) translateX(0.45rem) translateY(-0.05rem)',
+              transform:
+                'rotate(8deg) translateX(0.45rem) translateY(-0.05rem)',
               transformOrigin: '100% 0%',
             }}
           >

@@ -16,7 +16,7 @@ const PLANS = [
     number: '01',
     name: 'Launch',
     introductory: true,
-    pricePK: 'PKR 70,000',
+    pricePK: 'PKR 95,000',
     priceIntl: '$300',
     timeline: '≈ 1 week',
     included: [
@@ -30,7 +30,7 @@ const PLANS = [
     number: '02',
     name: 'Studio',
     introductory: true,
-    pricePK: 'PKR 95,000',
+    pricePK: 'PKR 140,000',
     priceIntl: '$500',
     timeline: '≈ 3 weeks',
     included: [
@@ -48,6 +48,7 @@ const PLANS = [
     included: [
       'Unlimited pages',
       'Branding (optional)',
+      'E-commerce',
       'Integrations + CMS',
       'SEO, a11y, analytics',
       'Ongoing care plan',
